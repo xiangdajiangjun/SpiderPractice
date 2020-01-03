@@ -31,7 +31,7 @@ public class EntityRequest {
         return deal(httpPost);
     }
     private EntityResponse deal(HttpUriRequest httpUriRequest) throws IOException {
-        httpUriRequest.setHeader("User-Agent", "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/79.0.3945.79 safari/537.36");
+        httpUriRequest.setHeader(ConstantsRequest.UserAgent,ConstantsRequest.Chrome );
         CloseableHttpClient closeableHttpClient = HttpClients.createDefault();
         CloseableHttpResponse closeableHttpResponse =closeableHttpClient.execute(httpUriRequest);
         EntityResponse response =new EntityResponse(closeableHttpResponse);
