@@ -1,4 +1,4 @@
-package access;
+package tool;
 
 public final class ConstantsRequest {
     private ConstantsRequest() {}

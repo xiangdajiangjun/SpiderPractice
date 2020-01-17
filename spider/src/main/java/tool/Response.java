@@ -1,4 +1,4 @@
-package access;
+package tool;
 
 import lombok.Data;
 import lombok.ToString;
@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 @Data
 @ToString
-public class EntityResponse {
+public class Response {
     //获取的实体,可获取内容、长度、类型、编码
     private String content;
     private  Long contentLength;
@@ -29,7 +29,7 @@ public class EntityResponse {
     //头部信息
     Map<String, String> headerMap;
 
-    public EntityResponse(CloseableHttpResponse closeableHttpResponse) throws IOException {
+    public Response(CloseableHttpResponse closeableHttpResponse) throws IOException {
         HttpEntity httpEntity = closeableHttpResponse.getEntity();
         content = EntityUtils.toString(httpEntity);
         contentLength = httpEntity.getContentLength();
