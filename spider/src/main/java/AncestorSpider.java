@@ -4,4 +4,6 @@
 public abstract class AncestorSpider {
     private String asd;
     private String zxc;
+
+    private String rtyuio;
 }
