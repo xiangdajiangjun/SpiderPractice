@@ -2,5 +2,5 @@
  * 始祖爬虫
  */
 public abstract class AncestorSpider {
-    private String qwe;
+    private String asd;
 }
