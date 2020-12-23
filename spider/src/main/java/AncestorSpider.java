@@ -3,4 +3,5 @@
  */
 public abstract class AncestorSpider {
     private String asd;
+    private String zxc;
 }
